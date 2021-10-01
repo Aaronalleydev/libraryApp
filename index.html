@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="intro">
+  <h1 class="gradient-text">My Library</h1>
+  <p class="gradient-text">A Library app created by me the CodePig!</p>
+  <p>This project has been created as part of the Odin Project curriculum and uses Object Constructor and local storage</p>
+</div>
+<button class="new">Add Book</button>
+<div class="formWrapper hidden">
+  <h3 class="formTitle">Add a new book!</h3>
+  <form action="" class="form hidden">
+    <input type="text" name="title" id="title" placeholder="Title">
+    <input type="text" name="author" id="author" placeholder="Author">
+    <input type="text" name="pages" id="pages" placeholder="Number of Pages">
+    <legend>Read book?</legend>
+    <fieldset class="readSelect">
+          <label for="yes">
+            <input type="radio" id="yes" name="read" value="yes" checked>
+            <span>Yes</span>
+          </label>
+          <label for="no">
+            <input type="radio" id="no" name="read" value="no">
+            <span>No</span>
+          </label>
+        </fieldset>
+</form>
+<div class="buttonGroup hidden">
+  <button id="submit" class="formButton">Submit</button>
+  <button id="return" class="formButton">Return</button>
+  </div>
+</div>
+  <!-- Create table to display books -->
+  <div class="table">
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Read</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>TitleData</td>
+        <td>AuthorData</td>
+        <td>PagesData</td>
+        <td>Read Data</td>
+        
+        <td><button>Change read status</button></td>
+        <td><button>Edit</button></td>
+        <td><button>Delete</button></td>
+      </tbody>
+    </table>
+  </div>
+</main>
+  <script src="app.js"></script>
+</body>
+</html>
